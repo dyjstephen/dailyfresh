@@ -6,7 +6,7 @@ class TypeInfoAdmin(admin.ModelAdmin):
 
 class GoodsInfoAdmin(admin.ModelAdmin):
     list_per_page = 15
-    list_display = ['id','gtitle','gprice','gunit','gkucun','gclick','gjianjie','gcontent','gtype']
+    list_display = ['id','gtitle','gprice','gunit','gkucun','gclick','gtype']
 
 
 admin.site.register(TypeInfo,TypeInfoAdmin)

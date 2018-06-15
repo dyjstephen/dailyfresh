@@ -24,7 +24,6 @@ class Migration(migrations.Migration):
                 ('gjianjie', models.CharField(max_length=200)),
                 ('gkucun', models.IntegerField()),
                 ('gcontent', tinymce.models.HTMLField()),
-                ('gadv', models.BooleanField(default=False)),
             ],
         ),
         migrations.CreateModel(
@@ -33,5 +32,10 @@ class Migration(migrations.Migration):
                 ('id', models.AutoField(verbose_name='ID', serialize=False, auto_created=True, primary_key=True)),
                 ('ttitle', models.CharField(max_length=20)),
             ],
+        ),
+        migrations.AddField(
+            model_name='goodsinfo',
+            name='gtype',
+            field=models.ForeignKey(to='df_goods.TypeInfo'),
         ),
     ]

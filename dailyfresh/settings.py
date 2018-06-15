@@ -41,6 +41,8 @@ INSTALLED_APPS = (
     'df_user',
     'df_goods',
     'tinymce',
+    'df_cart',
+    'df_order',
 )
 
 MIDDLEWARE_CLASSES = (
@@ -94,9 +96,9 @@ DATABASES = {
 # Internationalization
 # https://docs.djangoproject.com/en/1.8/topics/i18n/
 
-LANGUAGE_CODE = 'en-us'
+LANGUAGE_CODE = 'zh-hans'
 
-TIME_ZONE = 'UTC'
+TIME_ZONE = 'Asia/Shanghai'
 
 USE_I18N = True
 
